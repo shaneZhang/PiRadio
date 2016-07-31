@@ -12,6 +12,10 @@ PiRadio是一个在树莓派上可以搭建的一个小型FM电台项目。本�
 3. 在GPIO4上插上一个杜邦线,20厘米即可
 4. 下载本项目并执行如下脚本 
    <pre><code>
+   # install the flask framwork
+   	cd PiRadio
+	virtualenv flask
+	flask/bin/pip install flask
    chmod a+x *.sh
    chmod a+x *.py
    </code></pr>
