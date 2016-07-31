@@ -18,7 +18,7 @@ PiRadio是一个在树莓派上可以搭建的一个小型FM电台项目。本�
 	flask/bin/pip install flask
    chmod a+x *.sh
    chmod a+x *.py
-   </code></pr>
+   </code></pre>
 5. 运行start.sh
 6. 打开浏览器访问`http://{host}:1234/search?name=hello`
 
