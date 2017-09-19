@@ -17,9 +17,9 @@ reload (sys)
 sys.setdefaultencoding('utf8')
 
 
-music_search_host = 'addd.zhangyuqing.ucloud-bj-1.goodrain.net'
+music_search_host = 'api.5288z.com'
 music_search_port = 10080
-music_search_file = '/musicapi.php'
+music_search_file = '/weixin/musicapi.php'
 
 app = Flask(__name__)
 
@@ -49,8 +49,8 @@ def search_music(name):
     httpClient = None
 
     try:
-        #httpClient = httplib.HTTPSConnection(music_search_host)
-        httpClient = httplib.HTTPConnection(music_search_host, music_search_port, timeout=50)
+        httpClient = httplib.HTTPSConnection(music_search_host)
+#        httpClient = httplib.HTTPConnection(music_search_host, music_search_port, timeout=50)
         url_path = music_search_file + '?q=' + name;
         httpClient.request('GET', str(url_path))
         response = httpClient.getresponse()
